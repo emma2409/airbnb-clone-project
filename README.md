@@ -171,3 +171,20 @@ Payments: To secure financial transactions and prevent fraud or chargebacks.
 Property Listings: To avoid malicious users deleting/editing listings they don’t own.
 Bookings: To prevent users from tampering with or canceling others' bookings.
 Reviews:	To ensure the integrity of user-generated content and prevent spam or defamation.
+
+# CI/CD Pipeline
+CI/CD stands for Continuous Integration and Continuous Deployment/Delivery.
+A CI/CD pipeline automates the process of building, testing, and deploying code every time changes are made. It helps teams detect bugs early, maintain code quality, and deliver updates faster and more reliably.
+
+Why CI/CD is Important for the Airbnb Clone Project
+Ensures Stability: Automatically runs tests and catches errors before deployment.
+Speeds Up Development: Developers can push features quickly without manually deploying code.
+Reduces Human Error: Automation eliminates manual steps and mistakes in the deployment process.
+Improves Collaboration: Teams can merge changes confidently
+
+🛠️ Tools That Could Be Used
+GitHub Actions: Automates workflows like testing and deployment on every commit or pull request.
+Docker: Packages the app into containers for consistent deployment across environments.
+Docker Compose: Helps manage multi-service environments (e.g., backend + database).
+Heroku / Vercel / AWS / DigitalOcean: Used to deploy the backend automatically from the pipeline.
+Postman/Newman: Runs automated API tests during the CI phase.
