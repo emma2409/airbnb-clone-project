@@ -127,3 +127,47 @@ It maintains security and ensures that users interact with the system within the
 9. 📊 Admin Panel / Analytics (Optional Advanced Feature)
 Admins can monitor listings, users, and system activity, and hosts may get insights into their property performance.
 This adds an operational layer that supports scaling and managing the platform efficiently.
+
+
+# API Security
+Key Security Measures
+Authentication (Who are you?)
+Implementation: Use JWT (JSON Web Tokens) for secure login sessions.
+Purpose: Ensures only registered users can access protected endpoints.
+
+Authorization (What are you allowed to do?)
+Implementation: Role-based access control (RBAC) to restrict actions based on user roles (e.g., host vs. guest).
+Purpose: Prevents users from performing actions they’re not permitted to (e.g., a guest trying to edit a listing).
+
+Rate Limiting
+Implementation: Limit the number of API requests per IP/user using tools like Redis + middleware.
+Purpose: Prevents abuse (e.g., brute-force login attempts) and protects the server from overload.
+
+Input Validation & Sanitization
+Implementation: Validate all incoming data (e.g., emails, dates) and sanitize inputs to prevent SQL injection and XSS.
+Purpose: Protects against malicious data and maintains data integrity.
+
+HTTPS / SSL Encryption
+Implementation: Enforce HTTPS for all API traffic.
+Purpose: Secures data in transit and protects sensitive information (e.g., passwords, payment info).
+
+Token Expiry & Refresh Mechanism
+Implementation: Short-lived JWTs with refresh tokens.
+Purpose: Limits the risk window if a token is stolen.
+
+CORS Policy
+Implementation: Restrict API access to trusted frontend origins.
+Purpose: Prevents unauthorized cross-origin requests from untrusted domains.
+
+Logging & Monitoring
+Implementation: Log all authentication attempts, critical actions, and anomalies.
+Purpose: Helps in detecting suspicious behavior and responding to threats.
+
+🔒 Why Security Is Crucial by Project Area
+Area	Why Security Matters
+User Data: To protect personal information (names, emails, etc.) from breaches and identity theft.
+Authentication: To prevent unauthorized access to accounts or impersonation.
+Payments: To secure financial transactions and prevent fraud or chargebacks.
+Property Listings: To avoid malicious users deleting/editing listings they don’t own.
+Bookings: To prevent users from tampering with or canceling others' bookings.
+Reviews:	To ensure the integrity of user-generated content and prevent spam or defamation.
