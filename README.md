@@ -90,3 +90,40 @@ payment_status
 
 Relationships:
 A payment is linked to a booking.
+
+# Feature Breakdown
+1. 🧑‍💼 User Management
+Handles registration, authentication, profile updates, and role differentiation between hosts and guests.
+This feature ensures that users can securely access the platform, create accounts, log in, and manage their personal data and preferences
+
+2. 🏠 Property Management
+Allows hosts to list, update, and delete rental properties, including details like location, price, photos, and amenities.
+It enables the platform to offer diverse accommodation options by giving hosts full control over their listings.
+
+3. 📅 Booking System
+Enables guests to book properties for specific dates, view availability, and manage reservations.
+This is the core transactional feature that connects users to listings and processes the rental flow.
+
+4. 💳 Payment Integration
+Supports payment processing for bookings and may include refunds or cancellation policies.
+It ensures smooth financial transactions between guests and hosts, making the platform trustworthy and functional.
+
+5. 📝 Review & Rating System
+Allows guests to rate properties and leave feedback after their stay.
+This adds credibility to listings and helps future guests make informed decisions.
+
+6. 🔍 Search & Filter Functionality
+Lets users search for properties by location, price, date, rating, and other filters.
+It improves user experience by making it easier to find suitable listings quickly and efficiently.
+
+7. 🖼️ Image Upload & Gallery
+Hosts can upload photos for each property, helping guests visualize their stay.
+This feature significantly impacts booking decisions and the overall appeal of the listing.
+
+8. 🔐 Role-Based Access Control
+Restricts certain actions to specific roles (e.g., only hosts can add properties, only guests can book).
+It maintains security and ensures that users interact with the system within their permitted capabilities.
+
+9. 📊 Admin Panel / Analytics (Optional Advanced Feature)
+Admins can monitor listings, users, and system activity, and hosts may get insights into their property performance.
+This adds an operational layer that supports scaling and managing the platform efficiently.
